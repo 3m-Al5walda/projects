@@ -1,6 +1,5 @@
 
-import csv
-import os
+import os,csv 
 import enum
 import dataclasses as dc
 import typing 
@@ -11,8 +10,7 @@ files csv
 # data format:
 contact_id,name,gender,contact_number
 
-'''
-
+'''
 class Gender(str, enum.Enum):
     '''enum to store =gender '''
     """enum to store values of genders"""
@@ -133,8 +131,7 @@ class csvDb:
 
         with open(f'{name_file} .csv', 'w', newline='',encoding='utf-8') as f:
             file_write = csv.writer(f)
-            file_write.writerow(cont)
-
+            file_write.writerow(cont)
 
 cs = csvDb()
 cs.create_contact('abdulla','MALE','0796070317')
@@ -143,6 +140,5 @@ cs.create_contact('abdulla','MALE','0796070317')
 cs.save_data('abdulla')
 a = csvDb()
 a.create_contact('hamza','MALE','0794662620')
-a.save_data('messe')
-print()
+a.save_data('messe')
 

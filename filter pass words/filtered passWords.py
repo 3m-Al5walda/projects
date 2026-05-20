@@ -14,6 +14,8 @@ with open('passwords.txt','w',encoding='utf-8') as f:
     f.close()
     print('done ...')
 
+
+
 '''
 From 233535 password into 170499 ,
 After filtered all passwords from passwords which have length shorter than 8 .
